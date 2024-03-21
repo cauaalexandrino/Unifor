@@ -73,8 +73,7 @@ G --> H([FIM])
 
 #### Pseudocódigo (1.0 ponto)
 
-```mermaid
-flowchart TD
+```
 ALGORITMO verificar_NOVO_SALARIO
 DECLARE Sa, Sn NUMERICOS
 ESCREVA "Digite seu salario atual: "
