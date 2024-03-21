@@ -1,7 +1,7 @@
 
 # UNIFOR
-**Nome**: Cauã Alexandrino <br>
-**Disciplina**: Raciocínio lógico algorítm
+**Nome**: Nome do estudante <br>
+**Disciplina**: Raciocínio lógico algorítmico
 
 ## Exercício exemplo 1
 Implemente e teste um programa que imprima os n primeiros números.
@@ -59,8 +59,8 @@ A([INICIO]) --> B{{Digite um número: }}
 B --> C[\n\]
 C --> D[\soma = 0\]
 D --> E[[i=1 ATÉ n PASSO 1]]
-E --FALSE--> G([FIM])
-E --TRUE--> F[soma =+ i]
+E --> G([FIM])
+E --> F[soma =+ i]
 F --LOOP--> E
 ```
 
