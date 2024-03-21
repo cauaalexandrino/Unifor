@@ -1,6 +1,6 @@
 
 # UNIFOR
-**Nome**: Nome do estudante <br>
+**Nome**: Cauã Alexandrino Araújo Basile <br>
 **Disciplina**: Raciocínio lógico algorítmico
 
 ## Lista de exercícios 01
@@ -61,7 +61,14 @@ Sabe-se que os funcionários que recebem atualmente salário de até R$ 500 ter�
 
 ```mermaid
 flowchart TD
-A([INICIO]) --> B([FIM])
+A([INICIO]) --> B{{Digite um salário:}}
+B --> C[\ㅤ Sa ㅤ\]
+C --> D{S >= 500}
+D --TRUE--> E[Sa * 1.1 = Sn]
+D --FALSE--> F[Sa * 1.2 = Sn]
+E --> G{{Sn}}
+F --> G
+G --> H([FIM])
 ```
 
 #### Pseudocódigo (1.0 ponto)
