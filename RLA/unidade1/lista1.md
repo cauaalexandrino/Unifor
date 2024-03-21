@@ -8,7 +8,7 @@
 ### Exercício 01 (1 ponto)
 Represente, em fluxograma e pseudocódigo, um algoritmo para determinar se um número inteiro e positivo é par ou impar.
 
-#### Fluxograma (0,25 ponto)
+#### Fluxograma 
 
 ```mermaid
 flowchart TD
