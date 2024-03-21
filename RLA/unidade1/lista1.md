@@ -92,7 +92,17 @@ Represente, em fluxograma e pseudocódigo, um algoritmo para calcular a média a
 
 ```mermaid
 flowchart TD
-A([INICIO]) --> B([FIM])
+A([INICIO]) --> B{{Digite a primeira nota: }}
+B --> C[/Nota1/]
+C --> D{{Digite a segunda nota: }}
+D --> E[/Nota2/]
+E --> F[MEDIA == Nota1 + Nota2 / 2]
+F --> G{MEDIA >= 5}
+G --TRUE--> H[O aluno está aprovado com media: MEDIA]
+G --FALSE--> I[O aluno está reprovado com media: MEDIA]
+H --> J([FIM])
+I --> J
+
 ```
 
 #### Pseudocódigo (1 ponto)
