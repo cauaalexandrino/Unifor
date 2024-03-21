@@ -73,9 +73,18 @@ G --> H([FIM])
 
 #### Pseudocódigo (1.0 ponto)
 
-```
-Algoritmo ContaAprovacoes
-FIM_ALGORITMO
+```mermaid
+flowchart TD
+ALGORITMO verificar_NOVO_SALARIO
+DECLARE Sa, Sn NUMERICOS
+ESCREVA "Digite seu salario atual: "
+LEIA Sa
+SE Sa >= 500 ENTAO
+	Sn = Sa * 1.1
+SENAO
+	Sn = Sa * 1.2
+ESCREVA "Seu novo salario é: ", Sn
+FIM ALGORITMO
 ```
 
 #### Teste de mesa (1.0 ponto)
