@@ -127,8 +127,16 @@ Caso não atender a restrição de idade, calcular quantos anos faltam para o ca
 
 ```mermaid
 flowchart TD
-A([INICIO]) --> B([FIM])
-```
+A([INICIO])--> B{{Declare uma idade}}
+B --> C[/I/]
+C --> D{I >= 18}
+D --TRUE--> E{{Já pode retirar a CNH}}
+D --FALSE--> F[TF = 18 - I]
+F --> G{{Deve esperar o TF anos para poder tirar a CNH}}
+E --> I([FIM])
+G --> I
+
+```  
 
 #### Pseudocódigo (1.0 ponto)
 
