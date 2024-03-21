@@ -132,7 +132,7 @@ B --> C[/I/]
 C --> D{I >= 18}
 D --TRUE--> E{{Já pode retirar a CNH}}
 D --FALSE--> F[TF = 18 - I]
-F --> G{{Deve esperar o TF anos para poder tirar a CNH}}
+F --> G{{Deve esperar TF anos para poder tirar a CNH}}
 E --> I([FIM])
 G --> I
 
