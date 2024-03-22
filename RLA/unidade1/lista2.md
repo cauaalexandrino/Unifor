@@ -67,16 +67,24 @@ E --> F([FIM])
 #### Pseudocódigo (1.0 ponto)
 
 ```
-Algoritmo Media
-FIM_ALGORITMO
+ALGORITMO MEDIA
+DECLARE N1, N2, N3, N4 INTEIROS
+INICIO
+ESCREVA "Digite quatro numeros inteiros: "
+LEIA N1, N2, N3, N4
+M = N1 + N2 + N3 + N4 / 4 
+	ESCREVA "A media é: " M
+FIM
+
 ```
 
 #### Teste de mesa (0.5 ponto)
 
-| nome_coluna1 | nome_coluna2 | nome_coluna3 | nome_coluna4 | nome_coluna5 | 
-|      --      |      --      |      --      |      --      |      --      | 
-| Adicione     | espaço       | se quiser    |  alinhar     | as barras    |
-| verticais,   | mas          | não é        | obrigatório. | Entendido ?  |
+| N1 | N2 | N3 | N4 | M | SAIDA | 
+|      --      |      --      |      --      |      --      |      --      |      --      | 
+| 2     | 4       | 6    |  8     | 5    |      Média = 5      |
+| 1   | 3          | 5        | 7 | 4  |      Média = 4      |
+
 
 ### Exercício 02 (2.5 pontos)
 Leia uma temperatura dada em Celsius (C) e imprima o equivalente em Fahrenheit (F). (Fórmula de conversão: F = (9/5) * C + 32)
