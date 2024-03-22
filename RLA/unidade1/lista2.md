@@ -67,14 +67,14 @@ E --> F([FIM])
 #### Pseudocódigo (1.0 ponto)
 
 ```
-ALGORITMO Media
-DECLARE N1, N2, N3, N4 INTEIROS
-INICIO
-ESCREVA "Digite quatro numeros inteiros: "
-LEIA N1, N2, N3, N4
-M = N1 + N2 + N3 + N4 / 4 
-	ESCREVA "A media é: " M
-FIM
+1. ALGORITMO Media
+2. DECLARE N1, N2, N3, N4 INTEIROS
+3. INICIO
+4. ESCREVA "Digite quatro numeros inteiros: "
+5. LEIA N1, N2, N3, N4
+6. M = N1 + N2 + N3 + N4 / 4 
+7. 	ESCREVA "A media é: " M
+8. FIM_ALGORITIMO
 
 ```
 
@@ -104,14 +104,14 @@ E --> F([FIM])
 #### Pseudocódigo (1.0 ponto)
 
 ```
-ALGORITMO ConverteCelsiusFarenheit
-DECLARE C REAIS
-INICIO
-ESCREVA "Digite uma temperatura em Celcius: "
-LEIA C
-F = 9 / 5 * C + 32 ENTAO
-	ESCREVA "A temperatura em Fahrenheit é: " F
-FIM
+1. ALGORITMO ConverteCelsiusFarenheit
+2. DECLARE C REAIS
+3. INICIO
+4. ESCREVA "Digite uma temperatura em Celcius: "
+5. LEIA C
+6. F = 9 / 5 * C + 32 ENTAO
+7. 	ESCREVA "A temperatura em Fahrenheit é: " F
+8. FIM_ALGORITIMO
 
 
 
@@ -180,8 +180,23 @@ N --> F
 #### Pseudocódigo (1.0 ponto)
 
 ```
-Algoritmo ClassificaCategoria
-FIM_ALGORITMO
+1. Algoritmo ClassificaCategoria
+2. DECLARE idade
+3. INICIO
+4. ESCREVA "Digite uma idade:"
+5. LEIA idade
+6. SE idade >= 5 E idade <= 7 ENTÃO
+7.     ESCREVA "Infantil A"
+8. SENÃO SE idade >= 8 E idade <= 10 ENTÃO
+9.     ESCREVA "Infantil B"
+10. SENÃO SE idade >= 11 E idade <= 13 ENTÃO
+11.     ESCREVA "Juvenil A"
+12. SENÃO SE idade >= 14 E idade <= 17 ENTÃO
+13.     ESCREVA "Juvenil B"
+14. SENÃO SE idade >= 18 ENTÃO
+15.     ESCREVA "Adulto"
+16. FIM_ALGORITMO
+
 ```
 
 #### Teste de mesa (0.5 ponto)
