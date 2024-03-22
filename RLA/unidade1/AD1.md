@@ -214,11 +214,7 @@ K --LOOP--> G
 
 ```
 Algoritmo SomaNumeros
-DECLARE n, i, soma, num POSITIVOS
-ESCREVA " Digite a quantidade de números: "
 INICIO
-LEIA n
-SE n >= 0 ENTAO
 
 ...
 FIM
