@@ -116,8 +116,20 @@ I --> J
 #### Pseudocódigo (1 ponto)
 
 ```
-Algoritmo ContaAprovacoes
-FIM_ALGORITMO
+1. Algoritmo ContaAprovacoes
+2. DECLARE Nota1, Nota2, MEDIA
+3. INICIO
+4. ESCREVA "Digite a primeira nota:"
+5. LEIA Nota1
+6. ESCREVA "Digite a segunda nota:"
+7. LEIA Nota2
+8. MEDIA ← (Nota1 + Nota2) / 2
+9. SE MEDIA >= 5 ENTÃO
+10.     ESCREVA "O aluno está aprovado com média:", MEDIA
+11. SENÃO
+12.     ESCREVA "O aluno está reprovado com média:", MEDIA
+13. FIM_ALGORITIMO
+
 ```
 
 #### Teste de mesa (1 ponto)
