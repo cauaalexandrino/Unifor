@@ -67,7 +67,7 @@ E --> F([FIM])
 #### Pseudocódigo (1.0 ponto)
 
 ```
-ALGORITMO MEDIA
+ALGORITMO Media
 DECLARE N1, N2, N3, N4 INTEIROS
 INICIO
 ESCREVA "Digite quatro numeros inteiros: "
@@ -104,16 +104,26 @@ E --> F([FIM])
 #### Pseudocódigo (1.0 ponto)
 
 ```
-Algoritmo ConverteCelsiusFarenheit
-FIM_ALGORITMO
+ALGORITMO ConverteCelsiusFarenheit
+DECLARE C REAIS
+INICIO
+ESCREVA "Digite uma temperatura em Celcius: "
+LEIA C
+F = 9 / 5 * C + 32 ENTAO
+	ESCREVA "A temperatura em Fahrenheit é: " F
+FIM
+
+
+
+
 ```
 
 #### Teste de mesa (0.5 ponto)
 
-| nome_coluna1 | nome_coluna2 | nome_coluna3 | nome_coluna4 | nome_coluna5 | 
-|      --      |      --      |      --      |      --      |      --      | 
-| Adicione     | espaço       | se quiser    |  alinhar     | as barras    |
-| verticais,   | mas          | não é        | obrigatório. | Entendido ?  |
+| Celcius | Fahrenheit | Saída | 
+|      --      |      --      |      --      | 
+| 24   |    75,2   | "A temperatura em Fahrenheit é 75,2"   |
+| 15   |    59     | "A temperatura em Fahrenheit é 59 "    |
 
 ### Exercício 03 (2.5 pontos)
 Receba dois números reais e um operador e efetue a operação correspondente com os valores recebidos (operandos). 
