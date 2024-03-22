@@ -72,10 +72,19 @@ I --> J{{"b =", b}}
 #### Pseudocódigo (1 ponto)
 
 ```
-Algoritmo TrocaValores
-INICIO
-...
-FIM
+1 Algoritmo TrocaValores
+2 DECLARE a, b, aux
+3 INICIO
+4 ESCREVA "Digite o valor de a: "
+5 LEIA a
+6 ESCREVA "Digite o valor de b:"
+7 LEIA b
+8 aux ← a
+9 a ← b
+10 b ← aux
+11 ESCREVA "a ← ,a "
+12 ESCREVA "b ← ,b "
+13 FIM
 ```
 
 #### Teste de mesa
@@ -205,7 +214,12 @@ K --LOOP--> G
 
 ```
 Algoritmo SomaNumeros
+DECLARE n, i, soma, num POSITIVOS
+ESCREVA " Digite a quantidade de números: "
 INICIO
+LEIA n
+SE n >= 0 ENTAO
+
 ...
 FIM
 ```
