@@ -74,16 +74,16 @@ G --> H([FIM])
 #### Pseudocódigo (1.0 ponto)
 
 ```
-ALGORITMO verificar_NOVO_SALARIO
-DECLARE Sa, Sn NUMERICOS
-ESCREVA "Digite seu salario atual: "
-LEIA Sa
-SE Sa >= 500 ENTAO
-	Sn = Sa * 1.1
-SENAO
-	Sn = Sa * 1.2
-ESCREVA "Seu novo salario é: ", Sn
-FIM ALGORITMO
+1. ALGORITMO verificar_NOVO_SALARIO
+2. DECLARE Sa, Sn NUMERICOS
+3. ESCREVA "Digite seu salario atual: "
+4. LEIA Sa
+5. SE Sa >= 500 ENTAO
+6. 	Sn = Sa * 1.1
+7. SENAO
+8. 	Sn = Sa * 1.2
+9. ESCREVA "Seu novo salario é: ", Sn
+10. FIM_ALGORITMO
 ```
 
 #### Teste de mesa (1.0 ponto)
@@ -161,8 +161,18 @@ G --> I
 #### Pseudocódigo (1.0 ponto)
 
 ```
-Algoritmo ContaAprovacoes
-FIM_ALGORITMO
+1. Algoritmo ContaAprovacoes
+2. DECLARE Idade, TF
+3. INICIO
+4. ESCREVA "Declare uma idade:"
+5. LEIA Idade
+6. SE Idade >= 18 ENTÃO
+7.     ESCREVA "Você já pode tirar a CNH."
+8. SENÃO
+9.     TF ← 18 - Idade
+10.    ESCREVA "Você deve esperar ", TF, " anos para poder tirar a CNH."
+11. FIM_ALGORITMO
+
 ```
 
 #### Teste de mesa (1.0 ponto)
