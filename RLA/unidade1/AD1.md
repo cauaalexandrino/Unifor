@@ -329,10 +329,22 @@ H --> I
 #### Pseudocódigo (2 pontos)
 
 ```
-Algoritmo CalcFatorial
-INICIO
-...
-FIM
+1. Algoritmo CalcFatorial
+2. DECLARE n, fator, i
+3. INICIO
+4. ESCREVA "Digite um número inteiro não-negativo:"
+5. LEIA n
+6. SE n >= 0 ENTÃO
+7.     fator ← 1
+8.     PARA i DE 1 ATÉ n FAÇA
+9.         fator ← fator * i
+10.    FIM PARA
+11.    ESCREVA "O fatorial de ", n, " é: ", fator
+12. SENÃO
+13.    ESCREVA "O valor deve ser maior ou igual a zero!"
+14. FIM SE
+15. FIM
+
 ```
 
 #### Teste de mesa
