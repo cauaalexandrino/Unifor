@@ -82,8 +82,8 @@ I --> J{{"b =", b}}
 8 aux ← a
 9 a ← b
 10 b ← aux
-11 ESCREVA "a ← ,a "
-12 ESCREVA "b ← ,b "
+11 ESCREVA "a = ", a
+12 ESCREVA "b = ", b
 13 FIM
 ```
 
