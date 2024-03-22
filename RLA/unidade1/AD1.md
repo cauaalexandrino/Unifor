@@ -213,11 +213,24 @@ K --LOOP--> G
 #### Pseudocódigo (1 ponto)
 
 ```
-Algoritmo SomaNumeros
-INICIO
+1. Algoritmo SomaNumeros
+2. DECLARE n, num, soma, i
+3. INICIO
+4. ESCREVA "Digite a quantidade de números (n >= 0):"
+5. LEIA n
+6. SE n >= 0 ENTÃO
+7.     soma ← 0
+8.     PARA i DE 1 ATÉ n FAÇA
+9.         ESCREVA "Digite um número:"
+10.        LEIA num
+11.        soma ← soma + num
+12.     FIM PARA
+13.     ESCREVA "A soma dos números é ", soma
+14. SENÃO
+15.     ESCREVA "O valor deve ser maior ou igual a zero!"
+16. FIM SE
+17. FIM
 
-...
-FIM
 ```
 
 #### Teste de mesa
@@ -364,10 +377,21 @@ I --LOOP--> E
 #### Pseudocódigo (2 pontos)
 
 ```
-Algoritmo GeraFibonacci
-INICIO
-...
-FIM
+1. Algoritmo GeraFibonacci
+2. DECLARE n, a, b, termo_atual, i
+3. INICIO
+4. ESCREVA "Número de termos da série Fibonacci:"
+5. LEIA n
+6. a ← 0
+7. b ← 1
+8. PARA i DE 1 ATÉ n PASSO 1 FAÇA
+9.     ESCREVA a
+10.    termo_atual ← a + b
+11.    a ← b
+12.    b ← termo_atual
+13. FIM PARA
+14. FIM
+
 ```
 #### Teste de mesa
 
@@ -415,10 +439,24 @@ E --> W
 #### Pseudocódigo (2 pontos)
 
 ```
-Algoritmo InverteInteiro
-INICIO
-...
-FIM
+1. Algoritmo InverteInteiro
+2. DECLARE num, num_inv, digito
+3. INICIO
+4. ESCREVA "Digite um número inteiro: "
+5. LEIA num
+6. SE num >= 0 ENTÃO
+7.     num_inv ← 0
+8.     ENQUANTO num > 0 FAÇA
+9.         digito ← num % 10
+10.        num_inv ← num_inv * 10 + digito
+11.        num ← num // 10
+12.     FIM ENQUANTO
+13.     ESCREVA "Número invertido:", num_inv
+14. SENÃO
+15.     ESCREVA "O número deve ser positivo!"
+16. FIM SE
+17. FIM
+
 ```
 
 #### Teste de mesa
