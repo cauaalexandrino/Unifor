@@ -80,7 +80,12 @@ Leia uma temperatura dada em Celsius (C) e imprima o equivalente em Fahrenheit (
 
 ```mermaid
 flowchart TD
-A([INICIO]) --> B([FIM])
+A([INICIO]) --> B{{Digite uma temperatura em Celcius: }}
+B --> C[/C/]
+C --> D[F = 9 / 5 * C + 32]
+D --> E{{"A temperatura em Fahrenheit é: " F}}
+E --> F([FIM])
+
 ```
 
 #### Pseudocódigo (1.0 ponto)
