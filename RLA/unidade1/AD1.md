@@ -272,7 +272,7 @@ DECLARE n, i, soma: INTEIRO
 
 INICIO
 
-    // Solicita ao usuário que insira a quantidade de números (n >= 0)
+    // Solicita ao usuário que insira a quantidade de números
     ESCREVA "Digite a quantidade de números (n >= 0):"
     LEIA n
 
@@ -297,7 +297,7 @@ INICIO
             // Incrementa a soma com o valor de num
             soma <- soma + num
 
-            // Incrementa o contador i
+            // Incrementa a variável i
             i <- i + 1
 
         FIM_ENQUANTO
