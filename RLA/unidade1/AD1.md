@@ -2,7 +2,7 @@
 <img src="https://drive.google.com/uc?id=1SOzRTjUt7cuBJpSqoK90fcAiKBrnpUJo" width="400">
 
 **Curso:** Engenharia da Computação <br>
-**Disciplina:** Raciocínio Lógico e Algoritimo <br>
+**Disciplina:** Raciocínio Lógico e Algorítimo <br>
 **Código/Turma:** T998-08 / T998-09 <br>
 **Professor:** Ricardo Carubbi <br>
 **Data:** 02/04/2024 <br>
