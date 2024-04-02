@@ -1,7 +1,7 @@
 
 # UNIFOR
-**Nome**: Cauã Alexandrino Araújo Basile
-**Disciplina**: Raciocínio lógico algorítmico
+**Nome**: Cauã Alexandrino Araújo Basile <br>
+**Disciplina**: Raciocínio lógico algorítmico <br>
 
 ## Exercício exemplo 1
 Implemente e teste um programa que imprima os n primeiros números.
