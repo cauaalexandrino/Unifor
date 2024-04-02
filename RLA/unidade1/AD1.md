@@ -1,15 +1,15 @@
 
 <img src="https://drive.google.com/uc?id=1SOzRTjUt7cuBJpSqoK90fcAiKBrnpUJo" width="400">
 
-**Curso:** Engenharia da computação <br>
-**Disciplina:** Raciocínio lógico e algoritmo <br>
-**Código/Turma:** T998-08 <br>
+**Curso:** preencha com seus dados <br>
+**Disciplina:** preencha com seus dados <br>
+**Código/Turma:** preencha com seus dados <br>
 **Professor:** Ricardo Carubbi <br>
-**Data:** 21/03/2024 <br>
-**Aluno(a):** Cauã Alexandrino Araújo Basile <br>
-**Matrícula:** 2410306 <br>
+**Data:** preencha com a data de envio <br>
+**Aluno(a):** preencha com seus dados <br>
+**Matrícula:** preencha com seus dados <br>
 
-**1a chamada (Sim/Não):** Sim <br>
+**1a chamada (Sim/Não):** preencha com a opção correta <br>
 **2a chamada (Sim/Não):** preencha com a opção correta
 
 # Avaliação Diagnóstica 1
@@ -26,7 +26,7 @@ $$AV_1 = AF_1 \times 0,30 + AD_1 \times 0,70$$
 A **AD1** é formada pela entrega dos exercícios (**EX1**) na data prevista e apresentação (**AP1**) de um dos exercícios escolhido pelo professor.
 Segue abaixo a expressão para o cálculo da **AD1**.
 
-$$AD_1 = (EX1_1 + AP_1)/2 $$
+$$AD_1 = (EX_1 + AP_1)/2 $$
 
 A **EX1** é avaliada mediante a **correção dos exercícios**, sendo a avaliação no intervalo de 0% (não atende a questão), 50% (atende parcialmente) e 100% (atende em sua totalidade).
 Por exemplo, se o exercício equivale a 2 pontos e sua correção atente parcialmente a questão, então sua avaliação deste exercício será 1 ponto.
@@ -37,9 +37,12 @@ A avaliação da **AP1** é apenas considerada no intervalo de 0% (não atende o
 Por exemplo, se na apresentação do exercício, o aluno atenter de forma razoável a questão, então sua avaliação da apresentação será 7.5 pontos.
 
 ## Datas
-- Entrega da primeira avaliação formativa (**AF1**) composta pelas listas de exerciícios 1, 2 e 3: 21/03/24
-- Entrega dos exercícios da primeira avaliação diagnóstica (**EX1**): 21/03/24
-- Apresentação da primeira avaliação diagnóstica (**AP1**): 21/03/24
+- Entrega da primeira avaliação formativa (**AF1**) composta pelas listas de exerciícios 1, 2 e 3: 21/03/24 e 22/03/24 apenas para T998 - 08/09.
+- Entrega dos exercícios da primeira avaliação diagnóstica (**EX1**): 21/03/24 e 22/03/24 apenas para T998 - 08/09.
+- Apresentação da primeira avaliação diagnóstica (**AP1**): 21/03/24 e 22/03/24 apenas para T998 - 08/09.
+
+## Observações
+- Não serão admitidas alterações dos exercícios após a entrega do(s) trabalho(s) sob penalização com a anulação dos mesmos.
 
 ## Lista de questões
 
@@ -58,9 +61,9 @@ Dadas duas variáveis, $a$ e $b$, implemente e teste um algoritmo para trocar os
 
 ```mermaid
 flowchart TD
-A([INICIO]) --> B{{Digite o valor da a: }}
+A([INICIO]) --> B{{"Digite o valor da a:"}}
 B --> C[\a\]
-C --> D{{Digite o valor da b: }}
+C --> D{{"Digite o valor da b:"}}
 D --> E[\b\]
 E --> F[aux = a]
 F --> G[a = b]
@@ -71,23 +74,41 @@ I --> J{{"b =", b}}
 
 #### Pseudocódigo (1 ponto)
 
-```
-1 Algoritmo TrocaValores
-2 DECLARE a, b, aux
-3 INICIO
-4 ESCREVA "Digite o valor de a: "
-5 LEIA a
-6 ESCREVA "Digite o valor de b:"
-7 LEIA b
-8 aux ← a
-9 a ← b
-10 b ← aux
-11 ESCREVA "a = ", a
-12 ESCREVA "b = ", b
-13 FIM
+```java
+ALGORTIMO TrocaValores
+DECLARE a,b,axu: REAL
+
+INICIO
+
+    // Insira seu comentário
+    ESCREVA "Digite o valor da a:"
+
+    // Insira seu comentário
+    LEIA a
+
+    // Insira seu comentário
+    ESCREVA "Digite o valor da b:"
+
+    // Insira seu comentário
+    LEIA b
+
+    // Insira seu comentário
+    aux <- a 
+
+    // Insira seu comentário
+    a <- b
+
+    // Insira seu comentário
+    b <- aux
+
+    // Insira seu comentário
+    ESCREVA "a=", a
+    ESCREVA "b=", b
+
+FIM
 ```
 
-#### Teste de mesa
+#### Tabela de testes
 
 | a  | b  | aux | a  | b  | saída 1 | saída 2 | 
 | -- | -- | --  | -- | -- | --      | --      | 
@@ -149,15 +170,48 @@ J --LOOP--> E
 
 #### Pseudocódigo 01 (1 ponto)
 
-```
-Algoritmo ContaAprovacoes
+```java
+ALGORTIMO ContaAprovacoes
+DECLARE n, cont, nota, i: INTEIRO
+
 INICIO
-...
+
+    // Insira seu comentário
+    ESCREVA "Digite a quantidade de notas dos alunos:"
+
+    // Insira seu comentário
+    LEIA n
+
+    // Insira seu comentário
+    cont = 0 
+
+    // Insira seu comentário
+    PARA i DE 1 ATE n FAÇA
+
+        // Insira seu comentário
+        ESCREVA "Digite a nota do aluno", i, ":"
+
+        // Insira seu comentário
+        LEIA nota
+
+        // Insira seu comentário
+        SE nota >= 50 E nota <= 100 ENTAO
+
+            // Insira seu comentário
+            cont = cont + 1 
+
+        FIM_SE
+
+    FIM_PARA
+
+    // Insira seu comentário
+    ESCREVA "O numero de alunos aprovados e:", cont
+
 FIM
 ```
 
-#### Teste de mesa 01
-Teste de mesa referente ao algoritmo usando o loop ENQUANTO.
+#### Tabela de testes 01
+Tabela de testes referente ao algoritmo usando o loop ENQUANTO.
 
 | it | n  | i  | cont | i<=n  | nota, i | nota | nota_valida | cont+1 | i+1 | saída        | 
 | -- | -- | -- | --   | --    | --      | --   | --          | --     | --  | --           |
@@ -166,8 +220,8 @@ Teste de mesa referente ao algoritmo usando o loop ENQUANTO.
 | 3  | 3  | 3  |  1   | True  | nota 3  | 90   | True        | 2      | 4   |              |
 | 4  | 3  | 4  |  2   | False |         |      |             |        |     | Aprovados: 2 |
 
-#### Teste de mesa 02
-Teste de mesa referente ao algoritmo usando o loop PARA.
+#### Tabela de testes 02
+Tabela de testes referente ao algoritmo usando o loop PARA.
 
 | it | n  | cont | i  | nota, i | nota | nota_valida | cont+1 | saída        | 
 | -- | -- | --   | -- | --      | --   | --          | --     | --           |
@@ -212,28 +266,55 @@ K --LOOP--> G
 
 #### Pseudocódigo (1 ponto)
 
-```
-1. Algoritmo SomaNumeros
-2. DECLARE n, num, soma, i
-3. INICIO
-4. ESCREVA "Digite a quantidade de números (n >= 0):"
-5. LEIA n
-6. SE n >= 0 ENTÃO
-7.     soma ← 0
-8.     PARA i DE 1 ATÉ n FAÇA
-9.         ESCREVA "Digite um número:"
-10.        LEIA num
-11.        soma ← soma + num
-12.     FIM PARA
-13.     ESCREVA "A soma dos números é ", soma
-14. SENÃO
-15.     ESCREVA "O valor deve ser maior ou igual a zero!"
-16. FIM SE
-17. FIM
+```java
+Algoritmo SomaNumeros
+DECLARE n,i,soma: INTEIRO
 
+INICIO
+
+    // Insira seu comentário
+    ESCREVA "Digite a quantidade de números<br> (n >= 0):"
+    LEIA n
+
+    // Insira seu comentário
+    SE n >=0 ENTAO
+
+        // Insira seu comentário
+        soma <- 0
+
+        // Insira seu comentário
+        i <- i
+
+        // Insira seu comentário
+        ENQUANTO i <= n FAÇA
+
+            // Insira seu comentário
+            ESCREVA "Digite um número:"
+
+            // Insira seu comentário
+            LEIA num 
+
+            // Insira seu comentário
+            soma <- soma + num
+
+            // Insira seu comentário
+            i <- i + 1
+
+        FIM_ENQUANTO
+
+    // Insira seu comentário
+    SENAO
+        "O valor deve ser maior ou igual a zero!"
+
+    FIM_SE
+
+    // Insira seu comentário
+    ESCREVA "A soma dos numeros é , soma"
+
+FIM
 ```
 
-#### Teste de mesa
+#### Tabela de testes
 
 | it | n  | n >= 0 | soma | i  | i <= n | num | soma =+ num  | saída                   |
 | -- | -- | --     | --   | -- | --     | --  | --           | --                      |
@@ -265,13 +346,13 @@ $$ S = \frac{1}{2} + \frac{3}{4} + \frac{5}{6} + \frac{7}{8} + \dots $$
 
 ```mermaid
 flowchart TD
-A([INICIO]) --> B{{Digite o número de termos da série S: }}
+A([INICIO]) --> B{{"Digite o número de termos da série S:"}}
 B --> C[/n/]
 C --> D[S = 0]
-D --> E[[i=0 ATE n PASSO 1]]
-E --i > n--> J{{"Soma da série S é ", S}}
+D --> E[[i=0 ATE n-1 PASSO 1]]
+E --"i > n-1"--> J{{"Soma da série S é ", S}}
 J --> K([FIM])
-E --"i=0,1,2,..,n"--> F[numerador = 2 * i + 1]
+E --"i=0,1,2,..,n-1"--> F[numerador = 2 * i + 1]
 F --> G[denominador = 2 * i + 2]
 G --> H[termo = numerador / denominador]
 H --> I[S += termo]
@@ -280,14 +361,45 @@ I --LOOP--> E
 
 #### Pseudocódigo (1 ponto)
 
-```
+```java
 Algoritmo SomaSerie
+DECLARE n,numerador,denominador: INTEIRO; termo, S: REAL
+
 INICIO
-...
+
+    // Insira seu comentário
+    ESCREVA "Digite o número de termos da série S:"
+
+    // Insira seu comentário
+    LEIA n
+
+    // Insira seu comentário
+    S <- 0
+
+    // Insira seu comentário
+    PARA i de 0 ATÉ n-1 PASSO 1 FAÇA
+
+        // Insira seu comentário
+        numerador = 2 * i + 1
+
+        // Insira seu comentário
+        denominador <- 2 * i + 2
+
+        // Insira seu comentário
+        termo = numerador / denominador
+
+        // Insira seu comentário
+        S += termo
+
+    FIM_PARA
+
+    // Insira seu comentário
+    ESCREVA "Soma da série S é ", S
+
 FIM
 ```
 
-#### Teste de mesa (0.25 ponto)
+#### Tabela de testes (0.25 ponto)
 
 | it | n  | S  | i | numerador | denominador | termo | S += termo     | saída                  |
 | -- | -- | -- |-- | --        | --          | --    | --             | --                     |
@@ -317,7 +429,7 @@ A([INICIO]) --> B{{"Digite um numero inteiro nao-negativo:"}}
 B --> C[/n/]
 C --> D{n >= 0}
 D --TRUE--> E[fator = 1]
-D --FALSE--> J{{O valor deve ser maior ou igual a zero!}}
+D --FALSE--> J{{"O valor deve ser maior ou igual a zero!"}}
 J --> I([FIM])
 E --> F[[i=1 ATÉ n PASSO 1]]
 F --"i > n"--> H{{O fatorial de, n, é:, fator}}
@@ -328,26 +440,44 @@ H --> I
 
 #### Pseudocódigo (2 pontos)
 
-```
-1. Algoritmo CalcFatorial
-2. DECLARE n, fator, i
-3. INICIO
-4. ESCREVA "Digite um número inteiro não-negativo:"
-5. LEIA n
-6. SE n >= 0 ENTÃO
-7.     fator ← 1
-8.     PARA i DE 1 ATÉ n FAÇA
-9.         fator ← fator * i
-10.    FIM PARA
-11.    ESCREVA "O fatorial de ", n, " é: ", fator
-12. SENÃO
-13.    ESCREVA "O valor deve ser maior ou igual a zero!"
-14. FIM SE
-15. FIM
+```java
+ALGORITMO CalcFatorial
+DECLARE n: INTEIRO
 
+INICIO
+
+    // Insira seu comentário
+    ESCREVA "Digite um numero inteiro nao-negativo:"
+
+    // Insira seu comentário
+    LEIA n
+
+    // Insira seu comentário
+    SE n >= 0 ENTAO
+
+        // Insira seu comentário
+        fator <- 1
+
+        // Insira seu comentário
+        PARA i DE 1 ATÉ n PASSO 1 FAÇA
+
+            // Insira seu comentário
+            fator <- fator * i        // fator *= i
+
+        FIM_PARA
+
+        // Insira seu comentário
+        ESCREVA "O fatorial de, n, é:", fator
+
+    // Insira seu comentário
+    SENAO
+        ESCREVA "O valor deve ser maior ou igual a zero!"
+    FIM_SE
+
+FIM
 ```
 
-#### Teste de mesa
+#### Tabela de testes
 
 | n  | fator | i  | fator = fator * i | saída               |
 | -- | --    | -- | --                | --                  |
@@ -375,37 +505,58 @@ Os primeiros termos são: $0, 1, 1, 2, 3, 5, 8, 13, \dots$. Cada termo, além do
 ```mermaid
 flowchart TD
 A([INICIO]) --> B{{"Número de termos da série Fibonacci:"}}
-B --> C[a = 0]
-C --> D[b = 1]
-D --> E[[i=1 ATÉ n PASSO 1]]
-E --"i > n"--> J([FIM])
-E --"i=1,2,...,n"--> F{{a}}
-F --> G[termo_atual = a + b]
-G --> H[a = b]
-H --> I[b = termo_atual]
-I --LOOP--> E 
+B --> C[/n/]
+C --> D[a = 0]
+D --> E[b = 1]
+E --> F[[i=1 ATÉ n PASSO 1]]
+F --"i > n"--> K([FIM])
+F --"i=1,2,...,n"--> G{{a}}
+G --> H[termo_atual = a + b]
+H --> I[a = b]
+I --> J[b = termo_atual]
+J --LOOP--> F 
 ```
 
 #### Pseudocódigo (2 pontos)
 
-```
-1. Algoritmo GeraFibonacci
-2. DECLARE n, a, b, termo_atual, i
-3. INICIO
-4. ESCREVA "Número de termos da série Fibonacci:"
-5. LEIA n
-6. a ← 0
-7. b ← 1
-8. PARA i DE 1 ATÉ n PASSO 1 FAÇA
-9.     ESCREVA a
-10.    termo_atual ← a + b
-11.    a ← b
-12.    b ← termo_atual
-13. FIM PARA
-14. FIM
+```java
+ALGORITMO GeraFibonacci
+DECLARE n, a, b, termo_atual: INTEIRO
+
+INICIO
+
+    // Insira seu comentário
+    ESCREVA "Número de termos da série Fibonacci:"
+
+    // Insira seu comentário
+    LEIA n
+
+    // Insira seu comentário
+    a <- 0
+
+    // Insira seu comentário
+    b <- 1
+
+    // Insira seu comentário
+    PARA i DE 1 ATE n FAÇA
+
+        // Insira seu comentário
+        ESCREVA a
+
+        // Insira seu comentário
+        termo_atual <- a + b
+
+        // Insira seu comentário
+        a <- b
+
+        // Insira seu comentário
+        b <- termo_atual
+
+    FIM_PARA
+FIM
 
 ```
-#### Teste de mesa
+#### Tabela de testes
 
 | it | n  | a  | b  | i  | saída | termo_atual = a + b | a = b | b = termo_atual |
 | -- | -- | -- | -- | -- | --    | --                  | --    | --              |
@@ -442,7 +593,7 @@ H --FALSE--> Z{{"Número invertido:", numero_inv}}
 Z --> W([FIM])
 H --TRUE--> I[digito = num % 10]
 I --> J[num_inv = num_inv * 10 + digito]
-J --> K[numero = numero // 10]
+J --> K[num = num // 10]
 K --LOOP--> H
 D --FALSE--> E{{O número deve ser positivo!}}
 E --> W
@@ -450,33 +601,54 @@ E --> W
 
 #### Pseudocódigo (2 pontos)
 
+```java
+Algoritmo InverteInteiro
+DECLARE num, num_inv, digito: INTEIRO
+
+INICIO
+
+    // Insira seu comentário
+    ESCREVA "Digite o número a ser invertido:"
+    LEIA num
+
+    // Insira seu comentário
+    SE num < 0 ENTAO
+
+        // Insira seu comentário
+        ESCREVA "O número deve ser positivo!"
+
+    // Insira seu comentário
+    SENAO
+
+        // Insira seu comentário
+        num_inv <- 0
+
+        // Insira seu comentário
+        ENQUANTO num > 0 FAÇA
+
+            // Insira seu comentário
+            digito <- num % 10
+
+            // Insira seu comentário
+            num_inv <- (num_inv * 10) + digito
+
+            // Insira seu comentário
+            num <- num // 10
+
+        // Insira seu comentário
+        ESCREVA "Número invertido:", num_inv
+
+    FIM_SE
+
+FIM
 ```
-1. Algoritmo InverteInteiro
-2. DECLARE num, num_inv, digito
-3. INICIO
-4. ESCREVA "Digite um número inteiro: "
-5. LEIA num
-6. SE num >= 0 ENTÃO
-7.     num_inv ← 0
-8.     ENQUANTO num > 0 FAÇA
-9.         digito ← num % 10
-10.        num_inv ← num_inv * 10 + digito
-11.        num ← num // 10
-12.     FIM ENQUANTO
-13.     ESCREVA "Número invertido:", num_inv
-14. SENÃO
-15.     ESCREVA "O número deve ser positivo!"
-16. FIM SE
-17. FIM
 
-```
+#### Tabela de testes
 
-#### Teste de mesa
-
-| it | num | num_inv | num > 0 | digito | num = num // 10 | num_inv = (num_inv * 10) + digito | Saída                       |
-| -- | --  | --      | --     | --      | --              | --                                | --                          |
-|    | -1  | 0       | False  |         |                 |                                   | O número deve ser positivo! |
-| 1  | 0   | 0       | False  |         |                 |                                   | Número invertido:: 0        |
-| 1  | 42  | 0       | True   | 2       | 4               | 2                                 |                             |
-| 2  | 4   | 2       | True   | 4       | 0               | 24                                |                             |
-| 3  | 0   | 24      | False  |         |                 |                                   | Número invertido:: 24       |
+| it | num | num_inv | num > 0 | digito | num = num // 10 | num_inv = (num_inv * 10) + digito | Saída                        |
+| -- | --  | --      | --     | --      | --              | --                                | --                           |
+|    | -1  | 0       | False  |         |                 |                                   | O número deve ser positivo!  |
+| 1  | 0   | 0       | False  |         |                 |                                   | Número invertido:: 0         |
+| 1  | 42  | 0       | True   | 2       | 4               | 2                                 |                              |
+| 2  | 4   | 2       | True   | 4       | 0               | 24                                |                              |
+| 3  | 0   | 24      | False  |         |                 |                                   | Número invertido:: 24        |
