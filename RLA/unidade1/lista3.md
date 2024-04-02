@@ -1,6 +1,6 @@
 
 # UNIFOR
-**Nome**: Nome do estudante<br>
+**Nome**: Cauã Alexandrino Araújo Basile
 **Disciplina**: Raciocínio lógico algorítmico
 
 ## Exercício exemplo 1
