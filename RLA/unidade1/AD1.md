@@ -1,16 +1,16 @@
 
 <img src="https://drive.google.com/uc?id=1SOzRTjUt7cuBJpSqoK90fcAiKBrnpUJo" width="400">
 
-**Curso:** preencha com seus dados <br>
-**Disciplina:** preencha com seus dados <br>
-**Código/Turma:** preencha com seus dados <br>
+**Curso:** Engenharia da Computação <br>
+**Disciplina:** Raciocínio Lógico e Algoritimo <br>
+**Código/Turma:** T998-08 / T998-09 <br>
 **Professor:** Ricardo Carubbi <br>
-**Data:** preencha com a data de envio <br>
-**Aluno(a):** preencha com seus dados <br>
-**Matrícula:** preencha com seus dados <br>
+**Data:** 02/04/2024 <br>
+**Aluno(a):** Cauã Alexandrino Araújo Basile <br>
+**Matrícula:** 2410306 <br>
 
-**1a chamada (Sim/Não):** preencha com a opção correta <br>
-**2a chamada (Sim/Não):** preencha com a opção correta
+**1a chamada (Sim/Não):** Não <br>
+**2a chamada (Sim/Não):** Sim
 
 # Avaliação Diagnóstica 1
 
@@ -268,50 +268,52 @@ K --LOOP--> G
 
 ```java
 Algoritmo SomaNumeros
-DECLARE n,i,soma: INTEIRO
+DECLARE n, i, soma: INTEIRO
 
 INICIO
 
-    // Insira seu comentário
-    ESCREVA "Digite a quantidade de números<br> (n >= 0):"
+    // Solicita ao usuário que insira a quantidade de números (n >= 0)
+    ESCREVA "Digite a quantidade de números (n >= 0):"
     LEIA n
 
-    // Insira seu comentário
-    SE n >=0 ENTAO
+    // Verifica se n é maior ou igual a zero
+    SE n >= 0 ENTAO
 
-        // Insira seu comentário
+        // Inicializa a variável soma com 0
         soma <- 0
 
-        // Insira seu comentário
-        i <- i
+        // Inicializa a variável de controle i com 1
+        i <- 1
 
-        // Insira seu comentário
+        // Loop para receber os números e calcular a soma
         ENQUANTO i <= n FAÇA
 
-            // Insira seu comentário
+            // Solicita ao usuário que insira um número
             ESCREVA "Digite um número:"
-
-            // Insira seu comentário
+            
+            // Lê o número fornecido pelo usuário e armazena na variável num
             LEIA num 
 
-            // Insira seu comentário
+            // Incrementa a soma com o valor de num
             soma <- soma + num
 
-            // Insira seu comentário
+            // Incrementa o contador i
             i <- i + 1
 
         FIM_ENQUANTO
 
-    // Insira seu comentário
+    // Se n for menor que zero, exibe mensagem de erro
     SENAO
-        "O valor deve ser maior ou igual a zero!"
+        // Exibe mensagem de erro caso o valor de entrada seja negativo
+        ESCREVA "O valor deve ser maior ou igual a zero!"
 
     FIM_SE
 
-    // Insira seu comentário
-    ESCREVA "A soma dos numeros é , soma"
+    // Exibe a soma dos números
+    ESCREVA "A soma dos números é ", soma
 
 FIM
+
 ```
 
 #### Tabela de testes
