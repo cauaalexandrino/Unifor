@@ -75,37 +75,40 @@ I --> J{{"b =", b}}
 #### Pseudocódigo (1 ponto)
 
 ```java
-ALGORTIMO TrocaValores
-DECLARE a,b,axu: REAL
+ALGORITMO TrocaValores
+DECLARE a, b, aux: REAL
 
 INICIO
 
-    // Insira seu comentário
-    ESCREVA "Digite o valor da a:"
+    // Solicita ao usuário que insira o valor de a
+    ESCREVA "Digite o valor de a:"
 
-    // Insira seu comentário
+    // Lê o valor fornecido pelo usuário e armazena em a
     LEIA a
 
-    // Insira seu comentário
-    ESCREVA "Digite o valor da b:"
+    // Solicita ao usuário que insira o valor de b
+    ESCREVA "Digite o valor de b:"
 
-    // Insira seu comentário
+    // Lê o valor fornecido pelo usuário e armazena em b
     LEIA b
 
-    // Insira seu comentário
+    // Armazena o valor de a em aux
     aux <- a 
 
-    // Insira seu comentário
+    // Substitui o valor de a pelo valor de b
     a <- b
 
-    // Insira seu comentário
+    // Substitui o valor de b pelo valor armazenado em aux
     b <- aux
 
-    // Insira seu comentário
+    // Exibe o valor de a
     ESCREVA "a=", a
+
+    // Exibe o valor de b
     ESCREVA "b=", b
 
 FIM
+
 ```
 
 #### Tabela de testes
@@ -171,43 +174,44 @@ J --LOOP--> E
 #### Pseudocódigo 01 (1 ponto)
 
 ```java
-ALGORTIMO ContaAprovacoes
+ALGORITMO ContaAprovacoes
 DECLARE n, cont, nota, i: INTEIRO
 
 INICIO
 
-    // Insira seu comentário
+    // Solicita ao usuário que insira a quantidade de notas dos alunos
     ESCREVA "Digite a quantidade de notas dos alunos:"
 
-    // Insira seu comentário
+    // Lê o valor fornecido pelo usuário e armazena em n
     LEIA n
 
-    // Insira seu comentário
+    // Inicializa o contador de alunos aprovados como zero
     cont = 0 
 
-    // Insira seu comentário
+    // Loop para iterar sobre as notas dos alunos
     PARA i DE 1 ATE n FAÇA
 
-        // Insira seu comentário
-        ESCREVA "Digite a nota do aluno", i, ":"
+        // Solicita ao usuário que insira a nota do aluno atual
+        ESCREVA "Digite a nota do aluno ", i, ":"
 
-        // Insira seu comentário
+        // Lê o valor fornecido pelo usuário e armazena em nota
         LEIA nota
 
-        // Insira seu comentário
+        // Verifica se a nota está na faixa de aprovação (entre 50 e 100)
         SE nota >= 50 E nota <= 100 ENTAO
 
-            // Insira seu comentário
+            // Incrementa o contador de alunos aprovados
             cont = cont + 1 
 
         FIM_SE
 
     FIM_PARA
 
-    // Insira seu comentário
+    // Exibe o número de alunos aprovados
     ESCREVA "O numero de alunos aprovados e:", cont
 
 FIM
+
 ```
 
 #### Tabela de testes 01
@@ -364,41 +368,43 @@ I --LOOP--> E
 #### Pseudocódigo (1 ponto)
 
 ```java
-Algoritmo SomaSerie
-DECLARE n,numerador,denominador: INTEIRO; termo, S: REAL
+ALGORITMO SomaSerie
+DECLARE n, numerador, denominador: INTEIRO
+DECLARE termo, S: REAL
 
 INICIO
 
-    // Insira seu comentário
+    // Solicita ao usuário que insira o número de termos da série S
     ESCREVA "Digite o número de termos da série S:"
 
-    // Insira seu comentário
+    // Lê o valor fornecido pelo usuário e armazena em n
     LEIA n
 
-    // Insira seu comentário
+    // Inicializa a variável de soma S
     S <- 0
 
-    // Insira seu comentário
+    // Loop para calcular os termos da série e somá-los
     PARA i de 0 ATÉ n-1 PASSO 1 FAÇA
 
-        // Insira seu comentário
+        // Calcula o numerador do termo
         numerador = 2 * i + 1
 
-        // Insira seu comentário
+        // Calcula o denominador do termo
         denominador <- 2 * i + 2
 
-        // Insira seu comentário
+        // Calcula o termo atual da série
         termo = numerador / denominador
 
-        // Insira seu comentário
+        // Soma o termo atual à variável de soma S
         S += termo
 
     FIM_PARA
 
-    // Insira seu comentário
+    // Exibe a soma da série S
     ESCREVA "Soma da série S é ", S
 
 FIM
+
 ```
 
 #### Tabela de testes (0.25 ponto)
@@ -444,39 +450,40 @@ H --> I
 
 ```java
 ALGORITMO CalcFatorial
-DECLARE n: INTEIRO
+DECLARE n, fator: INTEIRO
 
 INICIO
 
-    // Insira seu comentário
-    ESCREVA "Digite um numero inteiro nao-negativo:"
+    // Solicita ao usuário que insira um número inteiro não negativo
+    ESCREVA "Digite um número inteiro não-negativo:"
 
-    // Insira seu comentário
+    // Lê o valor fornecido pelo usuário e armazena em n
     LEIA n
 
-    // Insira seu comentário
+    // Verifica se o número fornecido pelo usuário não é negativo
     SE n >= 0 ENTAO
 
-        // Insira seu comentário
+        // Inicializa o fatorial como 1
         fator <- 1
 
-        // Insira seu comentário
+        // Loop para calcular o fatorial
         PARA i DE 1 ATÉ n PASSO 1 FAÇA
 
-            // Insira seu comentário
+            // Calcula o fatorial
             fator <- fator * i        // fator *= i
 
         FIM_PARA
 
-        // Insira seu comentário
-        ESCREVA "O fatorial de, n, é:", fator
+        // Exibe o fatorial calculado
+        ESCREVA "O fatorial de ", n, " é:", fator
 
-    // Insira seu comentário
+    // Se o número fornecido pelo usuário for negativo, exibe uma mensagem de erro
     SENAO
         ESCREVA "O valor deve ser maior ou igual a zero!"
     FIM_SE
 
 FIM
+
 ```
 
 #### Tabela de testes
@@ -527,31 +534,27 @@ DECLARE n, a, b, termo_atual: INTEIRO
 
 INICIO
 
-    // Insira seu comentário
+    // Solicita ao usuário o número de termos da série Fibonacci
     ESCREVA "Número de termos da série Fibonacci:"
 
-    // Insira seu comentário
+    // Lê o valor fornecido pelo usuário e armazena em n
     LEIA n
 
-    // Insira seu comentário
+    // Inicializa os dois primeiros termos da série Fibonacci
     a <- 0
-
-    // Insira seu comentário
     b <- 1
 
-    // Insira seu comentário
+    // Loop para gerar os termos da série Fibonacci
     PARA i DE 1 ATE n FAÇA
 
-        // Insira seu comentário
+        // Exibe o termo atual da série Fibonacci
         ESCREVA a
 
-        // Insira seu comentário
+        // Calcula o próximo termo da série Fibonacci
         termo_atual <- a + b
 
-        // Insira seu comentário
+        // Atualiza os valores dos termos para os próximos cálculos
         a <- b
-
-        // Insira seu comentário
         b <- termo_atual
 
     FIM_PARA
@@ -604,45 +607,46 @@ E --> W
 #### Pseudocódigo (2 pontos)
 
 ```java
-Algoritmo InverteInteiro
+ALGORITMO InverteInteiro
 DECLARE num, num_inv, digito: INTEIRO
 
 INICIO
 
-    // Insira seu comentário
+    // Solicita ao usuário que insira o número a ser invertido
     ESCREVA "Digite o número a ser invertido:"
     LEIA num
 
-    // Insira seu comentário
+    // Verifica se o número fornecido pelo usuário é negativo
     SE num < 0 ENTAO
 
-        // Insira seu comentário
+        // Se o número é negativo, exibe uma mensagem de erro
         ESCREVA "O número deve ser positivo!"
 
-    // Insira seu comentário
+    // Se o número fornecido pelo usuário é positivo, inverte-o
     SENAO
 
-        // Insira seu comentário
+        // Inicializa a variável que armazenará o número invertido
         num_inv <- 0
 
-        // Insira seu comentário
+        // Loop para inverter o número
         ENQUANTO num > 0 FAÇA
 
-            // Insira seu comentário
+            // Obtém o último dígito do número
             digito <- num % 10
 
-            // Insira seu comentário
+            // Adiciona o dígito invertido à variável num_inv
             num_inv <- (num_inv * 10) + digito
 
-            // Insira seu comentário
+            // Remove o último dígito do número
             num <- num // 10
 
-        // Insira seu comentário
+        // Exibe o número invertido
         ESCREVA "Número invertido:", num_inv
 
     FIM_SE
 
 FIM
+
 ```
 
 #### Tabela de testes
