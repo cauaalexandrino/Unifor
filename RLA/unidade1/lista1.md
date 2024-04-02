@@ -1,7 +1,7 @@
 
 # UNIFOR
 **Nome**: Cauã Alexandrino Araújo Basile <br>
-**Disciplina**: Raciocínio lógico algorítmico
+**Disciplina**: Raciocínio lógico algorítimo <br>
 
 ## Lista de exercícios 01
 
